@@ -27,7 +27,6 @@
 		7A3D76CD2A7B169400D8E152 /* ViewManagerSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7A3D76CC2A7B169400D8E152 /* ViewManagerSDK.docc */; };
 		7A3D76CE2A7B169400D8E152 /* ViewManagerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A3D76CB2A7B169400D8E152 /* ViewManagerSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A3D76D52A7B180100D8E152 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3D76D42A7B180100D8E152 /* HelloWorld.swift */; };
-		7A3D76DD2A7B18AC00D8E152 /* ViewManagerSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3D76DC2A7B18AC00D8E152 /* ViewManagerSDKTests.swift */; };
 		7A3D76DE2A7B18AC00D8E152 /* ViewManagerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3D76C82A7B169400D8E152 /* ViewManagerSDK.framework */; };
 		7A4452AB2A7C6B5C0009649A /* VMTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4452AA2A7C6B5C0009649A /* VMTextFields.swift */; };
 		7A4452B22A7C6D9A0009649A /* VMGenericAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A4452B12A7C6D9A0009649A /* VMGenericAlert.xib */; };
@@ -69,7 +68,6 @@
 		7A3D76CC2A7B169400D8E152 /* ViewManagerSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ViewManagerSDK.docc; sourceTree = "<group>"; };
 		7A3D76D42A7B180100D8E152 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		7A3D76DA2A7B18AC00D8E152 /* ViewManagerSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewManagerSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A3D76DC2A7B18AC00D8E152 /* ViewManagerSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManagerSDKTests.swift; sourceTree = "<group>"; };
 		7A4452AA2A7C6B5C0009649A /* VMTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMTextFields.swift; sourceTree = "<group>"; };
 		7A4452B12A7C6D9A0009649A /* VMGenericAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VMGenericAlert.xib; sourceTree = "<group>"; };
 		7A4452B52A7C750B0009649A /* VMGenericAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMGenericAlert.swift; sourceTree = "<group>"; };
@@ -154,24 +152,6 @@
 		7A3D76BE2A7B169400D8E152 = {
 			isa = PBXGroup;
 			children = (
-				7A3D76CA2A7B169400D8E152 /* ViewManagerSDK */,
-				7A3D76DB2A7B18AC00D8E152 /* ViewManagerSDKTests */,
-				7A3D76C92A7B169400D8E152 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7A3D76C92A7B169400D8E152 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7A3D76C82A7B169400D8E152 /* ViewManagerSDK.framework */,
-				7A3D76DA2A7B18AC00D8E152 /* ViewManagerSDKTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7A3D76CA2A7B169400D8E152 /* ViewManagerSDK */ = {
-			isa = PBXGroup;
-			children = (
 				7AA45D622A8C05C300309597 /* ValidateCode */,
 				7A2A5CDA2A7C188C005FE39A /* Buttons */,
 				7A4452AC2A7C6CDD0009649A /* Alerts */,
@@ -184,16 +164,17 @@
 				7A3D76D42A7B180100D8E152 /* HelloWorld.swift */,
 				7A2A5CE32A7C1D46005FE39A /* Colors.xcassets */,
 				7A1B7F402A7D6E070088930E /* Icons.xcassets */,
+				7A3D76C92A7B169400D8E152 /* Products */,
 			);
-			path = ViewManagerSDK;
 			sourceTree = "<group>";
 		};
-		7A3D76DB2A7B18AC00D8E152 /* ViewManagerSDKTests */ = {
+		7A3D76C92A7B169400D8E152 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7A3D76DC2A7B18AC00D8E152 /* ViewManagerSDKTests.swift */,
+				7A3D76C82A7B169400D8E152 /* ViewManagerSDK.framework */,
+				7A3D76DA2A7B18AC00D8E152 /* ViewManagerSDKTests.xctest */,
 			);
-			path = ViewManagerSDKTests;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7A4452A92A7C6AB60009649A /* TextFields */ = {
@@ -366,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A3D76DD2A7B18AC00D8E152 /* ViewManagerSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
