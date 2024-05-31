@@ -14,7 +14,7 @@ func getVersionColor(nombre:String) -> UIColor {
     
     let bundle = Bundle(for: VMButtonsMiBait.self)
     if #available(iOS 11.0, *) {
-        return  UIColor(named: nombre, in: bundle, compatibleWith: nil) ?? UIColor.systemPink
+        return  UIColor(named: nombre, in: .main, compatibleWith: nil) ?? UIColor.systemPink
     }else{
         return UIColor.clear
     }
