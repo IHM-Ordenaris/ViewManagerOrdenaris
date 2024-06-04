@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bogle-Bold.otf">
+            <string>Bogle-Bold</string>
+        </array>
+        <array key="Bogle-Regular.otf">
+            <string>Bogle-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VMTextFieldBait" customModule="ViewManagerSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="imageSoporteB" destination="yHT-Uq-Wko" id="Kot-Qe-04m"/>
+                <outlet property="lblSoporteB" destination="g0c-PQ-jKt" id="XtM-sN-Nqa"/>
+                <outlet property="lblTituloB" destination="Pbn-gN-ByH" id="dy2-zP-pOe"/>
+                <outlet property="txtFieldBait" destination="fdW-0q-i0E" id="jBg-4L-kbq"/>
+                <outlet property="viewBGB" destination="iN0-l3-epB" id="8iM-cr-C7l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="533" height="108"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-Ys-eC7">
+                    <rect key="frame" x="0.0" y="12.666666666666671" width="533" height="108"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fdW-0q-i0E" customClass="VMTextFields" customModule="ViewManagerSDK">
+                            <rect key="frame" x="2" y="10" width="529" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="tlG-kp-hBy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Bogle-Regular" family="Bogle" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="typeField">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="stateField">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbn-gN-ByH">
+                            <rect key="frame" x="10" y="0.0" width="35.333333333333336" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="kfd-Ax-clc"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="y3O-v5-jzk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Bogle-Bold" family="Bogle" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="texto soporte" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="g0c-PQ-jKt">
+                            <rect key="frame" x="25" y="61" width="493" height="17"/>
+                            <fontDescription key="fontDescription" name="Bogle-Bold" family="Bogle" pointSize="12"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-Error" translatesAutoresizingMaskIntoConstraints="NO" id="yHT-Uq-Wko">
+                            <rect key="frame" x="2" y="62" width="15" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="yHT-Uq-Wko" secondAttribute="height" multiplier="1:1" id="3bI-jk-IyP"/>
+                                <constraint firstAttribute="width" constant="15" id="kAH-Y7-hbl"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="g0c-PQ-jKt" firstAttribute="leading" secondItem="yHT-Uq-Wko" secondAttribute="trailing" constant="8" id="BjE-xo-vGA"/>
+                        <constraint firstItem="g0c-PQ-jKt" firstAttribute="top" secondItem="fdW-0q-i0E" secondAttribute="bottom" constant="5" id="I7c-Lk-DAD"/>
+                        <constraint firstItem="Pbn-gN-ByH" firstAttribute="leading" secondItem="Vjp-Ys-eC7" secondAttribute="leading" constant="10" id="Kmm-Mg-dwY"/>
+                        <constraint firstItem="fdW-0q-i0E" firstAttribute="leading" secondItem="Vjp-Ys-eC7" secondAttribute="leading" constant="2" id="N6E-WM-qn0"/>
+                        <constraint firstAttribute="trailing" secondItem="fdW-0q-i0E" secondAttribute="trailing" constant="2" id="OQ2-aH-thV"/>
+                        <constraint firstItem="yHT-Uq-Wko" firstAttribute="centerY" secondItem="g0c-PQ-jKt" secondAttribute="centerY" id="Rj9-Ui-E0L"/>
+                        <constraint firstAttribute="trailing" secondItem="g0c-PQ-jKt" secondAttribute="trailing" constant="15" id="Rud-iz-DKM"/>
+                        <constraint firstItem="Pbn-gN-ByH" firstAttribute="top" secondItem="Vjp-Ys-eC7" secondAttribute="top" id="Tic-wi-c0M"/>
+                        <constraint firstItem="fdW-0q-i0E" firstAttribute="top" secondItem="Vjp-Ys-eC7" secondAttribute="top" constant="10" id="VxS-al-fLj"/>
+                        <constraint firstItem="yHT-Uq-Wko" firstAttribute="leading" secondItem="Vjp-Ys-eC7" secondAttribute="leading" constant="2" id="zKh-Py-xT1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Vjp-Ys-eC7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="H9y-wI-z5p"/>
+                <constraint firstItem="Vjp-Ys-eC7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="MIG-SG-rLS"/>
+                <constraint firstItem="Vjp-Ys-eC7" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mhM-3U-gTw"/>
+                <constraint firstItem="Vjp-Ys-eC7" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="pDq-yP-yTp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58.778625954198468" y="-242.25352112676057"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="fdW-0q-i0E">
+            <size key="intrinsicContentSize" width="67" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="icon-Error" width="67" height="67"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
